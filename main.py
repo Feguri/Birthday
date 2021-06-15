@@ -46,7 +46,7 @@ def birthday_check():
             second_person_key = key_list[second_current_person - 1]
             birthday = people_dict[f'person {current_person}']
             
-#            If statement that looks for birthday matches. 
+#            If statement that looks for birthday matches. first and statement prevent matches with oneself, second prevent cross-matches. 
             if people_dict[f'person {current_person}']\
                     == people_dict[f'person {second_current_person}'] and person_key != second_person_key\
                     and people_dict[f'person {current_person}'] is not None:
@@ -54,8 +54,8 @@ def birthday_check():
                 print(f'\nThere is a match! {person_key} and {second_person_key} both have their birthdays on '
                       f'{birthday[0]} {birthday[1]}.')
           
-#               Cancels current persons birthdays so it does not detect corss matches. Example: person 1 & person 2 and person 2 & person 1
-#               However, it might prevent multiple birthday matches in a large room. (problem in detail at Readme.md)
+#               Cancels current persons birthdays so it does not detect corss match. Example: person 1 & person 2 and person 2 & person 1
+#               However, it might not detect multiple birthday matches correctly in a large room. (problem in detail at Readme.md)
                 people_dict[f'person {current_person}'] = None
                 people_dict[f'person {second_current_person}'] = None
                 match = True
