@@ -14,3 +14,4 @@ person 346 - April 9
 the computer will consider person 1 and person 266 as a match, but it will leave person 346 as it had no matches at all.
 
 I think can fix this bug, but I'd like to leave the challenge for a few other problem solvers that are eager to fix things ;) 
+I also want to get a taste of working on issues with other fellow programmers.
