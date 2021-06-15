@@ -46,7 +46,7 @@ def birthday_check():
             second_person_key = key_list[second_current_person - 1]
             birthday = people_dict[f'person {current_person}']
             
-#            If statement that looks for matches. 
+#            If statement that looks for birthday matches. 
             if people_dict[f'person {current_person}']\
                     == people_dict[f'person {second_current_person}'] and person_key != second_person_key\
                     and people_dict[f'person {current_person}'] is not None:
