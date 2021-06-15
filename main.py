@@ -85,7 +85,7 @@ people = 40
 
 if people < 2:
     print('invalid number of people.')
-elif people > 200:
+elif people > 365:
 #           Once the problem is solved, this warning can go away.
     warning = input('WARNING: The number of people in that room is too large, and it might not produce accurate'
                     ' results. Do you wish to proceed? Y / N: ').lower()
