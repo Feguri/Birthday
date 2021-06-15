@@ -83,6 +83,16 @@ def calculate_probability(num_of_people):
 # Play with this number and experiment with different results
 people = 40
 
-random_birthday(num_of_people=people)
-birthday_check()
-calculate_probability(num_of_people=people)
+if people < 2:
+    print('invalid number of people.')
+elif people > 200:
+    warning = input('WARNING: The number of people in that room is too large, and it might not produce accurate'
+                    ' results. Do you wish to proceed? Y / N: ').lower()
+    if warning == 'y':
+        random_birthday(num_of_people=people)
+        birthday_check()
+        calculate_probability(num_of_people=people)
+else:
+    random_birthday(num_of_people=people)
+    birthday_check()
+    calculate_probability(num_of_people=people)
