@@ -80,7 +80,7 @@ def calculate_probability(num_of_people):
 
     print(f'\nThe probability of at least one match in a room with {num_of_people} people was {round(result, 3)}%')
 
-
+# Play with this number and experiment with different results
 people = 40
 
 random_birthday(num_of_people=people)
